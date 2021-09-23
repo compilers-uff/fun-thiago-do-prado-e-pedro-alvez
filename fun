@@ -1,3 +1,3 @@
-#!/usr/local/bin/bash
+#!/bin/bash
 
-maude.darwin64 -no-banner -allow-files fun-io
+/home/thiago/Downloads/maude-3.1/maude.linux64 -no-banner -allow-files fun-io
