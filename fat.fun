@@ -1,4 +1,7 @@
+fun fatAux(x | acc) =
+  if x == 0
+  then acc
+  else fatAux(x - 1 | acc * x),
+
 fun fat(x) =
-    if x == 0
-    then 1
-    else x * fat(x - 1)
+  fatAux(x | 1) 
