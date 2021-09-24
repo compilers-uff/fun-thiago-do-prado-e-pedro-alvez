@@ -4,4 +4,4 @@ fun fatAux(x | acc) =
   else fatAux(x - 1 | acc * x),
 
 fun fat(x) =
-  fatAux(x | 1) 
+  fatAux(x | 1)

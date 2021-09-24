@@ -1,4 +1,8 @@
+fun fibAux(x | y | z) =
+  if x == 0 then y
+  else    
+    if x == 1 then z
+    else fibAux(x - 1 | z | y + z),
+
 fun fib(x) =
-    if x == 0 then 0
-    else if x == 1 then 1
-          else fib(x - 1) + fib(x - 2)
+  fibAux(x | 0 | 1)
